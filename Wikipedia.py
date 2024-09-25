@@ -5,6 +5,7 @@ import time
 print("Before starting please make sure that you have an active internet connection and enter a valid name when asked.")
 time.sleep(3)
 user_input = input('What do you want to search on Wikipedia?:')
+user_input = user_input.replace(' ', '_')
 link = "https://en.wikipedia.org/wiki/" + user_input
 
 
